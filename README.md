@@ -33,7 +33,7 @@ The input variables used to train and test the model included:
 
 A further identification ID column ``EIN`` was dropped.
 
-- The approach used a base model which was iteratively built upon using stepped-up optimization techniques.
+- All X variables were normalized using the ```standardScaler()``` technique. A Train_test_split was then performed in all models.
 
 ### Base model
 
