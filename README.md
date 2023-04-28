@@ -1,7 +1,7 @@
 # deep-learning-challenge
 
 ## Overview
-This purpose of this analysis was to use a neural network model to predict whether recipient organisations of seed funding will be successful. The model has been trained and tested on a .csv file of 34,000 organisations that have previously received funding.
+The purpose of this analysis was to use a neural network model to predict whether recipient organisations of seed funding will be successful. The model has been trained and tested on a .csv file of 34,000 organisations that have previously received funding.
 
 ## Results
 The analysis employs a) a base model, and then b) three scaled optimization attempts. All models were trained and tested using the same source data.
