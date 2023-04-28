@@ -4,7 +4,7 @@
 This purpose of this analysis was to use a neural network model to predict whether recipient organisations of seed funding will be successful. The model has been trained and tested on a .csv file of 34,000 organisations that have previously received funding.
 
 ## Results
-- To approach this, a base model was trained and tested, followed by three, stepped Optimization attempts.
+The analysis employs a) a base model, and then b) three scaled optimization attempts. All models were trained and tested using the same source data.
 
 ### Pre-processing
 - The target variable used in training and testing the model was the variable ``is_Successful`` indicating success outcome as 1 - Successful and 0 - not successful.
