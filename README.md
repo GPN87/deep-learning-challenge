@@ -53,16 +53,28 @@ A further identification ID column ``EIN`` was dropped.
 
 - The ``APPLICATION_TYPE`` and ``CLASSIFICATION`` variables were binned with a new value called "Other" to capture rare values and make the variable easier to numericize.
 
+![binning](img/binning.png)
+
 - Categorical variables were made numeric using ``pd.get_dummies``
 
 - The base model is fitted using 1 hidden layer, 27 neurons per layer (1 for each input variable) and a ReLU activation function that outputs to a sigmoid function due to the binary outcome prediction. The model was trained and tested for 100 epochs.
 
 - Base model achieved a 
 
-- To achieve an accuracy score of over 75%, three optimization steps were used that adjusted the models hyperparameters. All three are saved in Jupyter Notebook titled ```AlphabetSoupCharity_Op
+- To achieve an accuracy score of over 75%, three optimization steps were used that adjusted the models hyperparameters. All three are saved in Jupyter Notebook titled ```AlphabetSoupCharity_Optimization.```
 
-### Optimization Attempt 1
-- Jupyer Notebook titled 
+### Optimization Attempt 1 - Adjusted bins, added neurons, added epochs
+- For all optimization attempts, the bins for ```AAPLICATION_TYPE``` and ```CLASSIFICATION``` were adjusted to lower the cutoff for an 'other' category, resulting in more categories, and hopefully, uncovering important patterns in the data. 
+- Bins were also created for the ```NAME``` category, which was added into the model.
+- The number of neurons was increased to reflect the neuron rule of thumb, but making it two times the amount of features after numericizing the categorical data. In this case, 190 neurons.
+- A ReLU activation function was used in the input and hidden layers.
+
+- Optimization Attempt 1 achieved a validation accuracy score of 75.1% and a Loss rate of 60.5%
+
+![Accuracy1](img/accuracy1.png)
+
+### Optimization Attempt 1 - Adjusted bins, added neurons, added epochs
+
 
 ## Summary
 - The model achieved a maximum accuracy of 75.6% in the first attempt at Op
